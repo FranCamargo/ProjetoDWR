@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Projeto DWR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+        <h1 id="title">Projeto Design Web Responsivo <h1>
+        <p id="description"> Pesquisa de Preferência Devs</p>
+        <br>
+        <form id="survey-form">
+          <label for="name" id="name-label">Informe seu nome<input type="text" id="name" placeholder="Ex:Aline dos Santos" required></label>
+          <label for="email"  id="email-label">Informe seu email<input type="email" id="email" placeholder="Ex: meu@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+          <label for="number"  id="number-label">Informe sua idade<input type="number" id="number" min="18" max="120" placeholder="Digite um número" required></label>
+        <br>
+        <fieldset>
+        <label> Selecione seu gênero
+          <select id="dropdown">
+              <option value="">Escolha uma das opções abaixo:</option>
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
+              <option value="3">Outro</option>
+          </select>
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Selecione sua preferência</legend>
+          <label for="back"><input type="radio" id="back" checked name="prefer" value="1" >Back-End</label>
+          <label for="front" ><input type="radio" id="front" name="prefer" value="2">Front-End</label>
+           <label for="nenhum" ><input type="radio" id="nenhum" name="prefer" value="0">Gosto dos dois</label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Quais são suas linguagens favoritas?</legend>
+            <label for="sim"><input type="checkbox" id="sim" checked name="devornot" value="1" checked>Java</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="2">JavaScript</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="3">Python</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="4">Cobol</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="5">TypeScript</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="6">Kotlin</label>
+            <label for="nao" ><input type="checkbox" id="nao" checked name="devornot" value="7">Nenhuma</label>
+            </fieldset>
+          <br>
+          <fieldset>
+            <legend>Faltou algo na pesquisa?</legend>
+          <label for="mais"> Conte-nos mais:
+          <textarea id="mais" name="mais" rows="3" cols="30" placeholder="Eu achei que faltou..."></textarea>
+        </label>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit" />
+
+      </form>
+    </main>
+    </body>
+</html>
