@@ -1,2 +1,1 @@
-# ProjetoDWR
-This repository is for one of the Survey Form projects that i've developed for FreeCodeCamp to get my certification in Responsive Web Design.
+Este repositório é para um dos projetos de Formulário de Pesquisa que desenvolvi para o FreeCodeCamp para obter minha certificação em Design Web Responsivo.
