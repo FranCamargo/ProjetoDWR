@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Projeto DWR</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <main>
+<head>
+    <meta charset="utf-8">
+    <title>Projeto DWR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
         <h1 id="title">Projeto Design Web Responsivo</h1>
         <p id="description">Pesquisa de Preferência Devs</p>
         <br>
-        <form id="survey-form" action="mailto:francamargoads@gmail.com?subject=Formulário Preferências Devs" method="post" enctype="text/plain">
+        <form id="survey-form" action="send_form.php" method="POST">
             <label for="name" id="name-label">Informe seu nome<input type="text" id="name" name="name" placeholder="Ex:Aline dos Santos" required></label><br>
             
             <label for="email" id="email-label">Informe seu email<input type="email" id="email" name="email" placeholder="Ex: meu@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label><br>
@@ -39,13 +39,13 @@
             
             <fieldset>
                 <legend>Quais são suas linguagens favoritas?</legend>
-                <label for="java"><input type="checkbox" id="java" name="linguagens" value="Java" checked>Java</label><br>
-                <label for="javascript"><input type="checkbox" id="javascript" name="linguagens" value="JavaScript">JavaScript</label><br>
-                <label for="python"><input type="checkbox" id="python" name="linguagens" value="Python">Python</label><br>
-                <label for="cobol"><input type="checkbox" id="cobol" name="linguagens" value="Cobol">Cobol</label><br>
-                <label for="typescript"><input type="checkbox" id="typescript" name="linguagens" value="TypeScript">TypeScript</label><br>
-                <label for="kotlin"><input type="checkbox" id="kotlin" name="linguagens" value="Kotlin">Kotlin</label><br>
-                <label for="nenhuma"><input type="checkbox" id="nenhuma" name="linguagens" value="Nenhuma">Nenhuma</label>
+                <label for="java"><input type="checkbox" id="java" name="linguagens[]" value="Java" checked>Java</label><br>
+                <label for="javascript"><input type="checkbox" id="javascript" name="linguagens[]" value="JavaScript">JavaScript</label><br>
+                <label for="python"><input type="checkbox" id="python" name="linguagens[]" value="Python">Python</label><br>
+                <label for="cobol"><input type="checkbox" id="cobol" name="linguagens[]" value="Cobol">Cobol</label><br>
+                <label for="typescript"><input type="checkbox" id="typescript" name="linguagens[]" value="TypeScript">TypeScript</label><br>
+                <label for="kotlin"><input type="checkbox" id="kotlin" name="linguagens[]" value="Kotlin">Kotlin</label><br>
+                <label for="nenhuma"><input type="checkbox" id="nenhuma" name="linguagens[]" value="Nenhuma">Nenhuma</label>
             </fieldset><br>
             
             <fieldset>
@@ -56,6 +56,6 @@
             
             <input type="submit" value="Enviar" id="submit" />
         </form>
-        </main>
-    </body>
+    </main>
+</body>
 </html>
